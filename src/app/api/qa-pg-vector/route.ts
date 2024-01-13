@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import { Ollama } from 'langchain/llms/ollama'
+import { Ollama } from '@langchain/community/llms/ollama'
 import { vectorSearch } from '@/util'
 
 export async function POST(req: Request) {
