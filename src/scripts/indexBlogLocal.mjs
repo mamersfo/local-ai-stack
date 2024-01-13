@@ -2,8 +2,10 @@
 // Ref: https://js.langchain.com/docs/modules/indexes/vector_stores/integrations/supabase
 
 import dotenv from 'dotenv'
-import { Document } from 'langchain/document'
+
+import { Document } from '@langchain/core/documents'
 import { createClient } from '@supabase/supabase-js'
+
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter'
 import { pipeline } from '@xenova/transformers'
 
